@@ -1,0 +1,229 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgenericrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15380\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 //#include <bits/stdc++.h>\cf3 \
+\cf2 //\cf3 \
+\cf2 //using namespace std;\cf3 \
+\cf2 //const int maxn=100000;\cf3 \
+\cf2 //#define CLOCKS_PER_SEC ((clock_t)30)\cf3 \
+\cf2 //pair<int,bool> human[maxn];\cf3 \
+\cf2 //int ans[maxn];\cf3 \
+\cf2 //int f=0;\cf3 \
+\cf2 //int inx;\cf3 \
+\cf2 //int flag=0;\cf3 \
+\cf2 //void print(int a,int b) \{\cf3 \
+\cf2 //    char c=' ';\cf3 \
+\cf2 //    if(f==0) c='+',ans[inx]=a+b;\cf3 \
+\cf2 //    if(f==1) c='-',ans[inx]=a-b;\cf3 \
+\cf2 //    if(f==2) c='*',ans[inx]=a*b;\cf3 \
+\cf2 //    if(f==3) c='/';\cf3 \
+\cf2 //    if(b==0&&c=='/') \{\cf3 \
+\cf2 //        c='*';\cf3 \
+\cf2 //        f=2;\cf3 \
+\cf2 //        if(f==3) ans[inx]=a/b;\cf3 \
+\cf2 //        else ans[inx]=a*b;\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //    printf("%d %c %d = ",a,c,b);\cf3 \
+\cf2 //\}\cf3 \
+\cf2 //int main() \{\cf3 \
+\cf2 //    memset(ans,-1,sizeof ans);\cf3 \
+\cf2 //    srand((unsigned)time(NULL));\cf3 \
+\cf2 //    int n,t;\cf3 \
+\cf2 //    cin>>n>>t;\cf3 \
+\cf2 //    //int start=clock();\cf3 \
+\cf2 //    for(inx=1;inx<=n;inx++) \{\cf3 \
+\cf2 //        int start=(int)clock();\cf3 \
+\cf2 //        int a=rand()%100+1;\cf3 \
+\cf2 //        int b=rand()%100+1;\cf3 \
+\cf2 //        if(a%4==0) \{\cf3 \
+\cf2 //            print(a,b);\cf3 \
+\cf2 //            f=0;\cf3 \
+\cf2 //            cin>>human[inx].first;\cf3 \
+\cf2 //            human[inx].second=true;\cf3 \
+\cf2 //        \}else if(a%4==1) \{\cf3 \
+\cf2 //            print(a,b);\cf3 \
+\cf2 //            f=1;\cf3 \
+\cf2 //            cin>>human[inx].first;\cf3 \
+\cf2 //            human[inx].second=true;\cf3 \
+\cf2 //            \cf3 \
+\cf2 //        \}else if(a%4==2) \{\cf3 \
+\cf2 //            print(a,b);\cf3 \
+\cf2 //            f=2;\cf3 \
+\cf2 //            cin>>human[inx].first;\cf3 \
+\cf2 //            human[inx].second=true;\cf3 \
+\cf2 //            \cf3 \
+\cf2 //        \}else \{\cf3 \
+\cf2 //            print(a,b);\cf3 \
+\cf2 //            f=3;\cf3 \
+\cf2 //            cin>>human[inx].first;\cf3 \
+\cf2 //            human[inx].second=true;\cf3 \
+\cf2 //        \}\cf3 \
+\cf2 //        int finish=(int)clock();\cf3 \
+\cf2 //        int tt=(finish-start)/CLOCKS_PER_SEC;//
+\f1 \'d2\'bb\'b5\'c0\'cc\'e2\'ca\'b9\'d3\'c3\'b5\'c4\'ca\'b1\'bc\'e4
+\f0  t 
+\f1 \'ca\'a3\'d3\'e0\'ca\'b1\'bc\'e4
+\f0 \cf3 \
+\cf2 //        if(tt>t) \{\cf3 \
+\cf2 //            human[inx].second=false;\cf3 \
+\cf2 //            break;\cf3 \
+\cf2 //        \}\cf3 \
+\cf2 //        t-=tt;\cf3 \
+\cf2 //        cout<<"
+\f1 \'bb\'b9\'ca\'a3
+\f0 "<<t<<"
+\f1 \'c3\'eb
+\f0 "<<endl;\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //    int res=0;\cf3 \
+\cf2 //    for(int i=1;i<=n;i++) \{\cf3 \
+\cf2 //        if(human[i].first==ans[i]&&human[i].second==true) res++;\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //    printf("
+\f1 \'c4\'e3\'d2\'bb\'b9\'b2\'b4\'f0\'b6\'d4\'c1\'cb
+\f0 %d
+\f1 \'cc\'e2
+\f0 \\n",res);\cf3 \
+\cf2 //    return 0;\cf3 \
+\cf2 //\}\cf3 \
+\
+\
+\cf2 //#include <cmath>\cf3 \
+\cf2 //#include <deque>\cf3 \
+\cf2 //#include <vector>\cf3 \
+\cf2 //#include <queue>\cf3 \
+\cf2 //#include <string>\cf3 \
+\cf2 //#include <cstring>\cf3 \
+\cf2 //#include <map>\cf3 \
+\cf2 //#include <stack>\cf3 \
+\cf2 //#include <set>\cf3 \
+\cf2 //#include <iostream>\cf3 \
+\cf2 //\cf3 \
+\cf2 //using namespace std;\cf3 \
+\cf2 //\cf3 \
+\cf2 //#define ll long long\cf3 \
+\cf2 //#define PQ priority_queue\cf3 \
+\cf2 //#define fr(x) freopen(x,"r",stdin)\cf3 \
+\cf2 //#define fw(x) freopen(x,"w",stdout)\cf3 \
+\cf2 //#define cls(ar,val) memset ( ar, val, sizeof ( ar ) )\cf3 \
+\cf2 //#define debug(a) cerr<<#a<<"=="<<a<<endl\cf3 \
+\cf2 //#define lp(loop,start,end) for ( int loop = start; loop < end; ++loop )\cf3 \
+\cf2 //#define lpd(loop,start,end) for ( int loop = start; loop > end; --loop )\cf3 \
+\cf2 //#define lpi(loop,start,end) for ( int loop = start; loop <= end; ++loop )\cf3 \
+\cf2 //#define lpdi(loop,start,end) for ( int loop = start; loop >= end; --loop )\cf3 \
+\cf2 //const int inf = 0x3fffffff;\cf3 \
+\cf2 //const int SINF = 0x7fffffff;\cf3 \
+\cf2 //const long long LINF = 0x3fffffffffffffff;\cf3 \
+\cf2 //const long long SLINF = 0x7fffffffffffffff;\cf3 \
+\cf2 //const int maxn=9999;\cf3 \
+\cf2 //template<typename T> inline void read(T &x)\{\cf3 \
+\cf2 //    x=0;T f=1;char ch;do\{ch=getchar();if(ch=='-')f=-1;\}while(ch<'0'||ch>'9');do x=x*10+ch-'0',ch=getchar();while(ch<='9'&&ch>='0');x*=f;\cf3 \
+\cf2 //\}\cf3 \
+\cf2 //\cf3 \
+\cf2 //template<typename A,typename B> inline void read(A&x,B&y)\{read(x);read(y);\}\cf3 \
+\cf2 //template<typename A,typename B,typename C> inline void read(A&x,B&y,C&z)\{read(x);read(y);read(z);\}\cf3 \
+\cf2 //template<typename A,typename B,typename C,typename D> inline void read(A&x,B&y,C&z,D&w)\{read(x);read(y);read(z);read(w);\}\cf3 \
+\cf2 //\cf3 \
+\cf2 //class BigNum \{\cf3 \
+\cf2 //private:\cf3 \
+\cf2 //    int a[500];\cf3 \
+\cf2 //    int len;\cf3 \
+\cf2 //public:\cf3 \
+\cf2 //    BigNum();\cf3 \
+\cf2 //    BigNum(const char*);\cf3 \
+\cf2 //    BigNum operator*(const BigNum&)const;\cf3 \
+\cf2 //    void print();\cf3 \
+\cf2 //\};\cf3 \
+\cf2 //BigNum::BigNum() \{\cf3 \
+\cf2 //    len = 1;\cf3 \
+\cf2 //    memset(a, 0, sizeof(a));\cf3 \
+\cf2 //\}\cf3 \
+\cf2 //BigNum::BigNum(const char* s)\cf3 \
+\cf2 //\{\cf3 \
+\cf2 //    int t, k, index, l, i;\cf3 \
+\cf2 //    memset(a, 0, sizeof(a));\cf3 \
+\cf2 //    l = (int)strlen(s);\cf3 \
+\cf2 //    len = l / 4;\cf3 \
+\cf2 //    if (l % 4)\cf3 \
+\cf2 //        len++;\cf3 \
+\cf2 //    index = 0;\cf3 \
+\cf2 //    for (i = l - 1; i >= 0; i -= 4) \{\cf3 \
+\cf2 //        t = 0;\cf3 \
+\cf2 //        k = i - 4 + 1;\cf3 \
+\cf2 //        if (k < 0)\cf3 \
+\cf2 //            k = 0;\cf3 \
+\cf2 //        for (int j = k; j <= i; j++)\cf3 \
+\cf2 //            t = t * 10 + s[j] - '0';\cf3 \
+\cf2 //        a[index++] = t;\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //\}\cf3 \
+\cf2 //\cf3 \
+\cf2 //BigNum BigNum::operator*(const BigNum& T) const\cf3 \
+\cf2 //\{\cf3 \
+\cf2 //    BigNum ret;\cf3 \
+\cf2 //    int i=0, j=0, up;\cf3 \
+\cf2 //    int temp, temp1;\cf3 \
+\cf2 //    for (i = 0; i < len; i++) \{\cf3 \
+\cf2 //        up = 0;\cf3 \
+\cf2 //        for (j = 0; j < T.len; j++) \{\cf3 \
+\cf2 //            temp = a[i] * T.a[j] + ret.a[i + j] + up;\cf3 \
+\cf2 //            if (temp > maxn) \{\cf3 \
+\cf2 //                temp1 = temp - temp / (maxn + 1) * (maxn + 1);\cf3 \
+\cf2 //                up = temp / (maxn + 1);\cf3 \
+\cf2 //                ret.a[i + j] = temp1;\cf3 \
+\cf2 //            \} else \{\cf3 \
+\cf2 //                up = 0;\cf3 \
+\cf2 //                ret.a[i + j] = temp;\cf3 \
+\cf2 //            \}\cf3 \
+\cf2 //        \}\cf3 \
+\cf2 //        if (up != 0) ret.a[i + j] = up;\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //    ret.len = i + j;\cf3 \
+\cf2 //    while (ret.a[ret.len - 1] == 0 && ret.len > 1)\cf3 \
+\cf2 //        ret.len--;\cf3 \
+\cf2 //    return ret;\cf3 \
+\cf2 //\}\cf3 \
+\cf2 //void BigNum::print()\cf3 \
+\cf2 //\{\cf3 \
+\cf2 //    int i;\cf3 \
+\cf2 //    cout << a[len - 1];\cf3 \
+\cf2 //    for (i = len - 2; i >= 0; i--) \{\cf3 \
+\cf2 //        cout.width(4);\cf3 \
+\cf2 //        cout.fill('0');\cf3 \
+\cf2 //        cout << a[i];\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //    cout << endl;\cf3 \
+\cf2 //\}\cf3 \
+\cf2 //char a[100],b[100];\cf3 \
+\cf2 //int main(void)\cf3 \
+\cf2 //\{\cf3 \
+\cf2 //    freopen("in2.txt","r",stdin);\cf3 \
+\cf2 //    cout<<"
+\f1 \'ca\'e4\'c8\'eb\'c4\'e3\'cf\'eb\'d2\'aa\'b2\'d9\'d7\'f7\'b5\'c4\'c1\'bd\'b8\'f6\'ca\'fd
+\f0 :"<<endl;\cf3 \
+\cf2 //    scanf("%s",a);scanf("%s",b);\cf3 \
+\cf2 //    int flag=0;\cf3 \
+\cf2 //    if(a[0]=='-') \{\cf3 \
+\cf2 //        flag++;\cf3 \
+\cf2 //        a[0]='0';\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //\cf3 \
+\cf2 //    if(b[0]=='-')\{\cf3 \
+\cf2 //        flag++;\cf3 \
+\cf2 //        b[0]='0';\cf3 \
+\cf2 //    \}\cf3 \
+\cf2 //    BigNum a1(a),b1(b);\cf3 \
+\cf2 //    a1.print();printf("\\n");\cf3 \
+\cf2 //    b1.print();printf("\\n");\cf3 \
+\cf2 //    BigNum sum;\cf3 \
+\cf2 //    sum = a1 * b1;\cf3 \
+\cf2 //    if(flag==1) printf("-");\cf3 \
+\cf2 //    sum.print();\cf3 \
+\cf2 //\cf3 \
+\cf2 //\}\cf3 \
+}
